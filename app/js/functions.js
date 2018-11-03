@@ -26,3 +26,13 @@ function sum(a, b, c){
 sum(1, 2, 3);
 let nums = [4, 5, 6];
 sum(...nums);
+
+function f() {
+    var z = 1;
+    for (var x of arguments) {
+        z *= x
+    }
+    console.log(z)
+}
+
+f(6, 7, 8)
